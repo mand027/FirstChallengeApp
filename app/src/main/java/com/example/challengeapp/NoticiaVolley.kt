@@ -19,9 +19,7 @@ class NoticiaVolley(val url: String, val context: Context, val noticiaAdapter: N
         val requestNews = JsonObjectRequest(Request.Method.GET, url, null,
             Response.Listener<JSONObject>{
                     response ->
-                Log.d("noticiaVolley", response.toString())
-                val dummy = 1;
-                val  noticias = response.getJSONObject("sources").getJSONArray("articles")
+                val  noticias = response.getJSONArray("articles")
 
                 for(i in 0..noticias.length()-1){
                     val noticiaFull = noticias.getJSONObject(i)

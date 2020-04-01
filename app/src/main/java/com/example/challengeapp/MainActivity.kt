@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     fun getNoticiasApiURL(): String{
 
-        var noticiaAPI : String = "https://newsapi.org/v2/top-headlines?country=us&apiKey=de962a7a30b64f1eafcae29b75a7f1c2"
+        var noticiaAPI : String = "https://newsapi.org/v2/top-headlines?country=mx&apiKey=de962a7a30b64f1eafcae29b75a7f1c2"
         return noticiaAPI
     }
 
