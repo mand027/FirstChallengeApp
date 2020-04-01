@@ -35,7 +35,7 @@ class NoticiaRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
                     val intent = Intent(contexto, Noticia_Layout::class.java)
                     intent.putExtra("noticia", noticias[position])
                     contexto.startActivity(intent)
-                    Toast.makeText(contexto,"INSIDE NOTICIA", Toast.LENGTH_LONG).show()
+                    //Toast.makeText(contexto,"INSIDE NOTICIA", Toast.LENGTH_LONG).show()
                 }
             }
         }
@@ -54,7 +54,7 @@ class NoticiaRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         fun bind (noticia: Noticia){
             title.text = noticia.title
             description.text = noticia.description
-            imageNews.setImage(noticia.description)
+            imageNews.setImage(noticia.image)
         }
 
         fun ImageView.setImage(url:String){
